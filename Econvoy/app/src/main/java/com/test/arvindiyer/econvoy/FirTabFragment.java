@@ -1,5 +1,6 @@
 package com.test.arvindiyer.econvoy;
 
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -11,10 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by Arvindiyer on 13-09-2015.
- */
-public class LostFragment extends Fragment {
+
+public class FirTabFragment extends Fragment {
+
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
     public static int int_items = 4 ;
@@ -51,7 +51,7 @@ public class LostFragment extends Fragment {
 
     }
 
-    class MyAdapter extends FragmentPagerAdapter {
+    class MyAdapter extends FragmentPagerAdapter{
 
         public MyAdapter(FragmentManager fm) {
             super(fm);
@@ -65,10 +65,10 @@ public class LostFragment extends Fragment {
         public Fragment getItem(int position)
         {
             switch (position){
-                case 0 : return new LostWhatFragment();
-                case 1 : return new LostReportFragment();
-                case 2 : return new LostStatusFragment();
-                case 3: return new LostFaqFragment();
+                case 0 : return new WhatFragment();
+                case 1 : return new FirFragment();
+                case 2 : return new StatusFragment();
+                case 3: return new FaqFragment();
             }
             return null;
         }
@@ -91,7 +91,7 @@ public class LostFragment extends Fragment {
                 case 0 :
                     return "What";
                 case 1 :
-                    return "Lost";
+                    return "FIR";
                 case 2 :
                     return "Status";
                 case 3 :
@@ -100,5 +100,6 @@ public class LostFragment extends Fragment {
             return null;
         }
     }
+
 
 }

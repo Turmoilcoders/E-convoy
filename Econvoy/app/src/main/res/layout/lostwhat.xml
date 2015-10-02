@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:id="@+id/lfw1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primary"
+        android:text="About "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/textColorPrimary"
+        android:textAlignment="gravity"
+        android:text="A Lost and Found Report is a written document prepared by police organization when they recieve information about theft or a person loosing some valuable belonging."
+        android:id="@+id/lfw2"
+        android:layout_below="@+id/lfw1"
+        android:autoText="false" />
+
+</RelativeLayout>

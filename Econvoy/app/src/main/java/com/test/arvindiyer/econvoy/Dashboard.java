@@ -3,15 +3,12 @@ package com.test.arvindiyer.econvoy;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
 import com.test.arvindiyer.econvoy.Helper.SQLiteHandler;
@@ -69,7 +66,7 @@ public class Dashboard extends AppCompatActivity  {
          */
         /**
          * Lets inflate the very first fragment
-         * Here , we are inflating the TabFragment as the first Fragment
+         * Here , we are inflating the FirTabFragment as the first Fragment
          */
         Bundle bundle=new Bundle();
         final WelcomeFragment w = new WelcomeFragment();
@@ -104,7 +101,7 @@ public class Dashboard extends AppCompatActivity  {
 
                 if (menuItem.getItemId() == R.id.nav_item_fir) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
-                    xfragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
+                    xfragmentTransaction.replace(R.id.containerView,new FirTabFragment()).commit();
                 }
 
                 if (menuItem.getItemId() == R.id.nav_item_lost) {
