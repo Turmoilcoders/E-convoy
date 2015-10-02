@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+                <LinearLayout android:id="@+id/header"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="56dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:layout_below="@+id/bar">
+                    <!-- Logo Start-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Fir Report"
+                        android:fontFamily="@string/app_name"
+                        android:layout_height="52dp"
+                        android:id="@+id/fir1"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/primary"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:textSize="15sp"
+                       android:layout_marginBottom="20dp"
+                        android:text="________"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#000"
+                        android:layout_below="@+id/fir1"
+                        android:textStyle="italic"
+                        android:id="@+id/faq1"/>
+
+                    <!-- Logo Ends -->
+                </LinearLayout>
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:layout_below="@+id/header">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+
+
+            <!-- Fir  Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Personal Details:"
+                android:fontFamily="@string/app_name"
+                android:textColor="@color/textColorPrimary"
+                android:layout_height="32dp"
+                android:id="@+id/firlabel1"
+                android:layout_gravity="left"
+                />
+            <!-- Full Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp">
+                <EditText android:id="@+id/f_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:drawableRight="@drawable/ic_action_user"
+                    android:hint="Name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Father Name -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/f_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:drawableRight="@drawable/ic_action_user"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Phone Number -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/f_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone number"
+                    android:drawableRight="@drawable/ic_action_user"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Email Name -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/f_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:drawableRight="@drawable/ic_action_mail"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/f_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"
+                    android:hint="Email"
+                    android:drawableRight="@drawable/ic_action_mail"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Place of Occerence:"
+                android:fontFamily="@string/app_name"
+                android:textColor="@color/textColorPrimary"
+                android:layout_height="32dp"
+                android:id="@+id/firlabel2"
+                android:layout_gravity="left"
+                />
+            <!-- Landmark -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp">
+                <EditText android:id="@+id/f_land"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:drawableRight="@drawable/ic_action_user"
+                    android:hint="Nearby Landmark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Direction -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/f_direction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Nearby Direction"
+                    android:drawableRight="@drawable/ic_action_user"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date and time of Occerence:"
+                android:fontFamily="@string/app_name"
+                android:textColor="@color/textColorPrimary"
+                android:layout_height="32dp"
+                android:id="@+id/firlabel3"
+                android:layout_gravity="left"
+                />
+            <!-- Date -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp">
+                <EditText android:id="@+id/f_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:drawableRight="@drawable/ic_action_user"
+                    android:hint="Nearby Landmark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Time -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+            <EditText android:id="@+id/f_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Nearby Direction"
+                android:drawableRight="@drawable/ic_action_user"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Offence:"
+                android:fontFamily="@string/app_name"
+                android:textColor="@color/textColorPrimary"
+                android:layout_height="32dp"
+                android:id="@+id/firlabel4"
+                android:layout_gravity="left"
+                />
+            <!-- Date -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp">
+                <EditText android:id="@+id/f_nature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:drawableRight="@drawable/ic_action_user"
+                    android:hint="Nature of crime" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Time -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/f_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Particulars of item lost"
+                    android:drawableRight="@drawable/ic_action_user"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Discription of Accused:"
+                android:fontFamily="@string/app_name"
+                android:textColor="@color/textColorPrimary"
+                android:layout_height="32dp"
+                android:id="@+id/firlabel5"
+                android:layout_gravity="left"
+                />
+            <!-- Discription -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp">
+                <EditText android:id="@+id/f_disc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:drawableRight="@drawable/ic_action_user"
+                    android:hint="Nearby Landmark" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Witness Details:"
+                android:fontFamily="@string/app_name"
+                android:textColor="@color/textColorPrimary"
+                android:layout_height="32dp"
+                android:id="@+id/firlabel6"
+                android:layout_gravity="left"
+                />
+            <!-- Full Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp">
+                <EditText android:id="@+id/w_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:drawableRight="@drawable/ic_action_user"
+                    android:hint="Name" />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Phone Number -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/w_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone number"
+                    android:drawableRight="@drawable/ic_action_user"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Email Name -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/w_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:drawableRight="@drawable/ic_action_mail"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/w_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"
+                    android:hint="Email"
+                    android:drawableRight="@drawable/ic_action_mail"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Discription -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Complain Desc:"
+                android:fontFamily="@string/app_name"
+                android:textColor="@color/textColorPrimary"
+                android:layout_height="32dp"
+                android:id="@+id/firlabel8"
+                android:layout_gravity="left"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp">
+                <EditText android:id="@+id/f_cdisc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:drawableRight="@drawable/ic_action_user"
+                    android:hint="complain" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Submit Button -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnRegister"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/textColorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Submit"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+                </RelativeLayout>
+        </ScrollView>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+</ScrollView>

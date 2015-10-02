@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF500">
+
+        <LinearLayout
+            android:id="@+id/bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
+
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_below="@+id/bar">
+            <!-- Logo Start-->
+            <ImageView android:src="@drawable/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal"/>
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:background="@layout/footer_repeat"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Registration Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_below="@id/header"
+            android:weightSum="1">
+            <!-- Full Name Label -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/reg_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:drawableRight="@drawable/ic_action_user"
+                    android:hint="Name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Email Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/reg_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:drawableRight="@drawable/ic_action_mail"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Type of user -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:drawableRight="@drawable/ic_action_users"
+                android:text="Type of user"
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:singleLine="true"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:textColor="@color/textColorPrimary"
+                android:id="@+id/reg_type"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Layman"
+                    android:id="@+id/radioButton2"
+                    android:textColor="@color/textColorPrimary"
+                    android:onClick="radio"
+                    android:textStyle="bold"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judicary"
+                    android:id="@+id/radioButton1"
+                    android:layout_weight="0.06"
+                    android:textColor="@color/textColorPrimary"
+                    android:onClick="radio"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lawyer"
+                    android:id="@+id/radioButton4"
+                    android:textColor="@color/textColorPrimary"
+                    android:onClick="radio"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student"
+                    android:id="@+id/radioButton3"
+                    android:layout_weight="0.46"
+                    android:textColor="@color/textColorPrimary"
+                    android:onClick="radio"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <!--  Password Label -->
+            <!-- Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/reg_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:drawableRight="@drawable/ic_action_lock_closed"/>
+            </android.support.design.widget.TextInputLayout>
+            <!-- Confirm Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp">
+                <EditText android:id="@+id/reg_password1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Confirm Password"
+                    android:drawableRight="@drawable/ic_action_key"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Register Button -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnRegister"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/textColorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Register"
+                android:textStyle="bold" />
+
+            <!-- Link to Login Screen -->
+            <TextView android:id="@+id/link_to_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:layout_marginBottom="40dip"
+                android:text="Already has account! Login here"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary"/>
+
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+</ScrollView>

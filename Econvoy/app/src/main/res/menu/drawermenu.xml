@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Welcome"
+        android:id="@+id/nav_item_welcome"
+        android:icon="@drawable/ic_action_home"
+        />
+
+    <item android:title="Profile"
+        android:id="@+id/nav_item_profile"
+        android:icon="@drawable/ic_action_user"/>
+
+    <item android:title="Services">
+        <menu>
+            <item
+                android:title="FIR"
+                android:id="@+id/nav_item_fir"
+                android:icon="@drawable/ic_action_document"/>
+            <item
+                android:title="Lost and found"
+                android:id="@+id/nav_item_lost"
+                android:icon="@drawable/ic_action_search"/>
+            <item
+                android:title="Unclaimed Vechiles"
+                android:id="@+id/nav_item_uvch"
+                android:icon="@drawable/ic_directions_car_black_24dp"/>
+
+            <item
+                android:title="Unidentified bodies"
+                android:id="@+id/nav_item_ub"
+                android:icon="@drawable/ic_action_goright"/>
+
+            <item
+                android:title="Unidentified Children"
+                android:id="@+id/nav_item_uc"
+                android:icon="@drawable/ic_action_user"/>
+
+            <item android:title="Lawyer hiring"
+                  android:id="@+id/nav_item_law"
+                android:icon="@drawable/ic_action_pin">
+            </item>
+
+        </menu>
+    </item>
+    <item android:title="Information Section">
+        <menu>
+            <item
+                android:title="IPC Section"
+                android:id="@+id/nav_item_ipc"
+                android:icon="@drawable/ic_action_search"/>
+            <item
+                android:title="Court Information"
+                android:id="@+id/nav_item_court"
+                android:icon="@drawable/ic_action_copy"/>
+
+        </menu>
+    </item>
+    <item android:title="Status"
+        android:id="@+id/nav_item_status"
+        android:icon="@drawable/ic_action_bargraph" />
+
+    <item android:title="Feed back "
+        android:id="@+id/nav_item_feedback"
+        android:icon="@drawable/ic_share_black_24dp" />
+
+
+    <item android:title="logout"
+          android:id="@+id/nav_item_logout"
+            android:icon="@drawable/ic_action_send"/>
+
+
+
+</menu>
