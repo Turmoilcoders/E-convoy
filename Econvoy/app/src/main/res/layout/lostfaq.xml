@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:id="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/holo_red_light"
+                android:text="FAQ"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="________"
+                android:textColor="#000"
+                android:layout_below="@+id/textView"
+                android:textStyle="italic"
+                android:id="@+id/faq1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq1"
+                android:id="@+id/faq2"
+                android:text="Q1] Why this application has been developed?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq2"
+                android:id="@+id/faq3"
+                android:text="World has consistently been adopting new methodologies and technologies to enhance ts service delivery capacity. Our endeavour has been to identify areas where newer means can help in reducing public inconvenience.
+"
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq3"
+                android:id="@+id/faq4"
+                android:text="Q2] What is procedure for lodiging the report?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq4"
+                android:id="@+id/faq5"
+                android:text="Visit the econvoy app or website and follow the procedure."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq5"
+                android:id="@+id/faq6"
+                android:text="Q3]What happens after i submit information?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq6"
+                android:id="@+id/faq7"
+                android:text="A digitally signed ‘Lost REPORT’ will be instantaneously sent back on the complainant’ e-mail address."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq7"
+                android:id="@+id/faq8"
+                android:text="Q4]What is the significance of Lost No?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq8"
+                android:id="@+id/faq9"
+                android:text="The ‘Lost Onine REPORT’ bears a unique Lost Report number (LR No) about the information lodged. This Lost Number can be used for future search and retrieval of a copy of the report."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq9"
+                android:id="@+id/faq10"
+                android:text="Q5]What types of complaints can be lodged?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq10"
+                android:id="@+id/faq11"
+                android:text="This service can be used to lodge a ‘Lost REPORT’ for any Item lost."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq11"
+                android:id="@+id/faq12"
+                android:text="Q6]What types of complaints cannot be lodged?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq12"
+                android:id="@+id/faq13"
+                android:text="This is not an emergency response service and should not be used to contact the police if:
+
+-A crime is taking place or is in progress.
+-The suspect(s) involved in the crime is/are still at the scene or in the vicinity.
+-Someone’s life or property is in immediate danger.
+-Someone has been injured in the incident.
+-The report pertains to a missing person.
+-Physical evidence such as blood stains, fingerprints have been found at a suspected scene of crime.
+-Missing/lost articles are related to any crime.
+
+*In the above situations or in any other emergency: Always call 100 or contact the nearest police station"
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq13"
+                android:id="@+id/faq14"
+                android:text="Q7]I have not received an e-mail conLostmation even though I have submitted my report."
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq14"
+                android:id="@+id/faq15"
+                android:text="-You may have accidentally provided a wrong e-mail address or your e-mail inbox is full.
+-You may also contact admin admin@econvoy.com to check your report"
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq15"
+                android:id="@+id/faq16"
+                android:text="Q8]How a ‘Lost REPORT’ can be verified?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq16"
+                android:id="@+id/faq17"
+                android:text="Any person can verify the ‘Lost REPORT’ by filling Lost No. in the status link of the application on the website."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq17"
+                android:id="@+id/faq18"
+                android:text="Q9]I am a foreigner. Can I lodge a ‘Lost REPORT’ online?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq18"
+                android:id="@+id/faq19"
+                android:text="You can lodge a police report."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq19"
+                android:id="@+id/faq20"
+                android:text="Q10]Is any investigation/enquiry done by police after lodging of a complaint?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq20"
+                android:id="@+id/faq21"
+                android:text="Yes, as it being a Lost report ,there will enquiry and investgation."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq21"
+                android:id="@+id/faq22"
+                android:text="Q11]What are the mandatory fields in the form?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq22"
+                android:id="@+id/faq23"
+                android:text="//left as not decided"
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq23"
+                android:id="@+id/faq24"
+                android:text="Q12]What action will be taken if complainant lodged any false report?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq24"
+                android:id="@+id/faq25"
+                android:text="False complaint/information to the police is a punishable offence."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq25"
+                android:id="@+id/faq26"
+                android:text="Q13]Whether the print out of report taken is to be submitted in any police station?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq26"
+                android:id="@+id/faq27"
+                android:text="No."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq27"
+                android:id="@+id/faq28"
+                android:text="Q14]Whether “Lost REPORT” can be retrieved or not?"
+                android:textColor="#000"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_below="@+id/faq28"
+                android:id="@+id/faq29"
+                android:text="Yes, it can be retrieved through status link on the module."
+                android:textColor="@color/textColorSecondary"
+                android:textStyle="italic"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

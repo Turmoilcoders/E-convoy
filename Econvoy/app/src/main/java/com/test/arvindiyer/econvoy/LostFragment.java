@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 public class LostFragment extends Fragment {
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
-    public static int int_items = 4 ;
+    public static int int_items = 5 ;
 
     @Nullable
     @Override
@@ -67,8 +67,9 @@ public class LostFragment extends Fragment {
             switch (position){
                 case 0 : return new LostWhatFragment();
                 case 1 : return new LostReportFragment();
-                case 2 : return new LostStatusFragment();
-                case 3: return new LostFaqFragment();
+                case 2:  return new FoundReportFragment();
+                case 3 : return new LostStatusFragment();
+                case 4: return new LostFaqFragment();
             }
             return null;
         }
@@ -93,8 +94,10 @@ public class LostFragment extends Fragment {
                 case 1 :
                     return "Lost";
                 case 2 :
-                    return "Status";
+                    return "Found";
                 case 3 :
+                    return "Status";
+                case 4:
                     return "Faq";
             }
             return null;
